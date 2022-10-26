@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+
+::-webkit-input-placeholder{
+    color:white;
+}
+
+:-ms-input-placeholder{
+    color: white;
+}
+
+:-moz-placeholder{
+    color: white;
+}
+
+::-moz-placeholder{
+    color: white;
+}
+
+div#main {
+    max-width: 960px;
+}
+
+.slider_image {
+    height: 200px;
+    width: 144px;
+}
+
+
+.slick-prev:before, .slick-next:before{
+    color: black;
+}

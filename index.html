@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	
+	<meta charset="UTF-8">
+	
+	<script defer src="node_modules/jquery-slim/dist/jquery.slim.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<meta content="width = device-width, initial-scale = 1, maximum-scale = 1" name="viewport">
+	
+	<title>web7</title>
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+	<script defer src="node_modules/slick-carousel/slick/slick.min.js"></script>
+	<script defer src="main.js"></script>
+</head>
+
+<body class="bg-light">
+
+<div class="bg-dark">
+	<h2 class = "text-center text-light">JS-CAlCULATOR</h2>
+</div>
+
+<div class="w-100 mt-0 mb-4 mx-auto p-3" id="main">
+	<div class="col-12 mt-5 mb-2 mx-3">
+		
+		<form>
+			<div class="row">
+				<input class="form-control col bg-light" id="cost" placeholder="Стоимость" type="text">
+				<input class="form-control col bg-light" id="amount" placeholder="Количество" type="text">
+				<button class="col btn bg-light" id="result" onclick="return calculate();">Расчитать стоимость</button>
+			</div>
+		</form>
+		<div class="text-center" id="answer"></div>
+	</div>
+	
+	<div class="col-12 mt-5">
+		
+		<div id = "total"></div>
+		
+		<form class = "col-5 pl-0">
+			<input class = "form-control col bg-light" id = "amount2" value = "1" type = "text">
+			
+			<div class = "input-group">
+				<span class = "input-group-text bg-light">Вид товара</span>
+				<select class = "form-select bg-light" name = "type">
+					<option value = "1">Продукты питания</option>
+					<option value = "2">Одежда</option>
+					<option value = "3">Электронника</option>
+				</select>
+			</div>
+			
+			
+			<div id = "res">
+				<label class = "form-check form-check-inline"><input type = "radio" name = "type_clothes" checked value = "man" class = "form-check-input">Мужская</label>
+				<label class = "form-check form-check-inline"><input type = "radio" name = "type_clothes" value = "woman" class = "form-check-input">Женская</label>
+			</div>
+			
+			<div id = "flag" class = "form-check ml-2">
+				<label><input type = "checkbox" class = "form-check-input" checked name = "wireless">Беспроводная</label>
+			</div>
+		</form>
+	</div>
+	<div class = "col mt-3">
+		<div class = "slider multiple-items">
+			<div><a href = "https://jut.su/made-abyss/season-1/episode-1.html"><img class = "slider_image mx-auto" src = "https://truth.bahamut.com.tw/s01/201807/35200c42446a5647395e84fea67285a8.JPG" alt = "maid_in_abyss_1"></a></div>
+			<div><a href = "https://animego.org/anime/sozdannyy-v-bezdne-rassvet-glubokoy-dushi-1264"><img class = "slider_image mx-auto" src = "https://m.media-amazon.com/images/M/MV5BNWYxODQxNTYtNzQ0MS00YzdkLTlmZWQtZWM0NDQ0NTZkZjc0XkEyXkFqcGdeQXVyMzExMzk5MTQ@._V1_.jpg" alt = "maid_in_abyss_dawn_of_the_deep_soul"></a></div>
+			<div><a href = "https://jut.su/made-abyss/season-2/episode-1.html"><img class = "slider_image mx-auto" src = "mia2.jpg" alt = "maid_in_abyss_2"></a></div>
+			<div><a href="https://jut.su/shoujo-shuumatsu/episode-1.html"><img class = "slider_image mx-auto" src = "https://i.pinimg.com/originals/c0/a1/70/c0a170954a7b0ed42de2f8b7af20c4c3.jpg" alt = "girls_last_tour"></a></div>
+			<div><a href = "https://jut.su/psycho-pass/season-1/episode-1.html"><img class = "slider_image mx-auto" src = "https://fastfrag.ru/paper/137/cover-image" alt = "psycho_pass_1"></a></div>
+			<div><a href = "https://jut.su/psycho-pass/film-1.html"><img class = "slider_image mx-auto" src = "https://jut-su.com/uploads/posts/2021-09/1632146221_846879_jpg.jpg" alt = "psycho_pass_f_1"></a></div>
+			<div><a href = "https://jut.su/psycho-pass/season-2/episode-1.html"><img class = "slider_image mx-auto" src = "https://brnm.ru/_ld/125/09037567.jpg" alt = "psycho-pass_2"></a></div>
+			<div><a href = "https://jut.su/psycho-pass/season-3/episode-1.html"><img class = "slider_image mx-auto" src = "https://i.pinimg.com/736x/4f/49/11/4f4911ed8810aa5ae1773b7af988b4e7.jpg" alt = "psycho_pass_3"></a></div>
+			<div><a href = "https://animego.org/anime/vrata-shteyna-127"><img class = "slider_image mx-auto" src = "https://m.media-amazon.com/images/M/MV5BNDJjMzNiYTMtMmZkZC00ZGVkLWI5YmYtOGNhYzg0MTE0OWE0XkEyXkFqcGdeQXVyNjMxNzQ2NTQ@._V1_FMjpg_UX1000_.jpg" alt = "stains;gate"></a></div>
+			<div><a href = "https://animego.org/anime/vrata-shteyna-0-461"><img class = "slider_image mx-auto" src = "https://media.kg-portal.ru/anime/s/steinsgate0/production/steinsgate0_1.jpg" alt = "stains;gate_0"></a></div>
+			<div><a href = "https://jut.su/stein-gate/film-1.html"><img class = "slider_image mx-auto" src = "https://ixbt.online/live/images/original/24/96/61/2022/08/24/476bb1b3ba.jpg" alt = "stains;gate_f_1"></a></div>
+			<div><a href = "https://jut.su/experiments-lain/episode-1.html"><img class = "slider_image mx-auto" src = "https://www.ozgurceizle.com/dimg/poster/ej3tcxv2YYVWy6WoOeWZTcrkiI8.jpg" alt = "experiments_lain"></a></div>
+			<div><a href="https://jut.su/91-days/episode-1.html"><img class = "slider_image mx-auto" src = "https://i.pinimg.com/736x/f3/bd/8e/f3bd8eec9f4a8d8052b35ab53a181481--anime-reviews-anime-life.jpg" alt = "91_days"></a></div>
+			<div><a href="https://jut.su/death-parade/episode-1.html"><img class = "slider_image mx-auto" src = "https://get.wallhere.com/photo/Death-Parade-Decim-Chiyuki-Nona-1317257.jpg" alt = "death_parade"></a></div>
+			<div><a href="https://jut.su/ergo-proxy/episode-1.html"><img class = "slider_image mx-auto" src = "https://avatars.dzeninfra.ru/get-zen_doc/1590748/pub_5da0ce3d1ee34f7325299364_5da3777fecfb8000ae1ce088/scale_1200" alt = "ergo_proxy"></a></div>
+			<div><a href="https://jut.su/flcl/season-1/episode-1.html"><img class = "slider_image mx-auto" src = "fclc.jpg" alt = "fooly_cooly"></a></div>
+		</div>
+	</div>
+</div>
+<footer class="w-100 m-0 pr-0 pl-4 py-4 bg-light bg-dark text-white">(c)Олефиренко Захар</footer>
+</body>
+
+</html>
