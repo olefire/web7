@@ -9,17 +9,18 @@
 	<script defer src="jquery-slim/dist/jquery.slim.min.js"></script>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	
 	<meta content="width = device-width, initial-scale = 1, maximum-scale = 1" name="viewport">
 	
 	<title>web7</title>
 	
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="slick-carousel/slick/slick-theme.css">
+	<link href="style.css" rel="stylesheet">
+	<link href="slick-carousel/slick/slick.css" rel="stylesheet">
+	<link href="slick-carousel/slick/slick-theme.css" rel="stylesheet">
 	<script defer src="slick-carousel/slick/slick.min.js"></script>
 	<script defer src="main.js"></script>
 </head>
@@ -27,7 +28,7 @@
 <body class="bg-light">
 
 <div class="bg-dark">
-	<h2 class = "text-center text-light">JS-CAlCULATOR</h2>
+	<h2 class="text-center text-light">JS-CAlCULATOR</h2>
 </div>
 
 <div class="w-100 mt-0 mb-4 mx-auto p-3" id="main">
@@ -45,48 +46,54 @@
 	
 	<div class="col-12 mt-5">
 		
-		<div id = "total"></div>
+		<div id="total"></div>
 		
-		<form class = "col-5 pl-0">
-			<input class = "form-control col bg-light" id = "amount2" value = "1" type = "text">
+		<form class="col-5 pl-0">
+			<input class="form-control col bg-light" id="amount2" type="text" value="1">
 			
-			<div class = "input-group">
-				<span class = "input-group-text bg-light">Вид товара</span>
-				<select class = "form-select bg-light" name = "type">
-					<option value = "1">Продукты питания</option>
-					<option value = "2">Одежда</option>
-					<option value = "3">Электронника</option>
+			<div class="input-group">
+				<span class="input-group-text bg-light">Вид товара</span>
+				<select class="form-select bg-light" name="type">
+					<option value="1">Продукты питания</option>
+					<option value="2">Одежда</option>
+					<option value="3">Электронника</option>
 				</select>
 			</div>
 			
 			
-			<div id = "res">
-				<label class = "form-check form-check-inline"><input type = "radio" name = "type_clothes" checked value = "man" class = "form-check-input">Мужская</label>
-				<label class = "form-check form-check-inline"><input type = "radio" name = "type_clothes" value = "woman" class = "form-check-input">Женская</label>
+			<div id="res">
+				<label class="form-check form-check-inline"><input checked class="form-check-input" name="type_clothes" type="radio"
+				                                                   value="man">Мужская</label>
+				<label class="form-check form-check-inline"><input class="form-check-input" name="type_clothes" type="radio"
+				                                                   value="woman">Женская</label>
 			</div>
 			
-			<div id = "flag" class = "form-check ml-2">
-				<label><input type = "checkbox" class = "form-check-input" checked name = "wireless">Беспроводная</label>
+			<div class="form-check ml-2" id="flag">
+				<label><input checked class="form-check-input" name="wireless" type="checkbox">Беспроводная</label>
 			</div>
 		</form>
 	</div>
-	<div class = "col mt-3">
-		<div class = "slider multiple-items">
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
-			<div><a><img class = "slider_image mx-auto" src = "photo_2021-12-24_00-42-50.jpg" alt = "saas_1"></a></div>
+	<div class="col mt-3">
+		<div class="slider multiple-items">
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
+			<div><a><img alt="saas_1" class="slider_image mx-auto" src="images.jpg"></a></div>
 		</div>
 	</div>
 </div>
